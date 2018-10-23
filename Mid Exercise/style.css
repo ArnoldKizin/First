@@ -1,0 +1,76 @@
+/* Styles go here */
+body {
+    direction: rtl;
+    font-family: 'Arial (Hebrew)', Arial;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  header {
+    height: 105px;
+    position: relative;
+    background: linear-gradient(to bottom, rgb(144, 144, 144) 90%, rgb(170, 170, 170));
+  }
+  
+  #header a.logo {
+      display: block;
+      width: 142px;
+      height: 93px;
+      position: absolute;
+      bottom: -130px;
+      right: -8px;
+      
+  }
+
+  #header {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    position: absolute;
+  }
+  
+  .form {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    /*position: relative;*/
+    text-align: center;
+  }
+
+  #Footer {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    height: 38px;
+    position: fixed;
+    bottom: 0px;
+    background: linear-gradient(to bottom, rgb(170, 170, 170) 10%, rgb(144, 144, 144));
+}
+
+#Footer > ul {
+    list-style: none;
+    padding: 0;
+  }
+  #Footer > ul > li {
+    display: inline-block;
+  }
+  
+  #Footer > ul > li > a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+  }
+  
+  #Footer > ul > li > a:hover {
+    background-color: black;
+  }
+  
+  #Footer > ul > li > a.active {
+    background-color: lightseagreen;
+  }
+  Footer > ul > li:last-child {
+    cplor: red;
+  }
