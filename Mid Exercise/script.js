@@ -1,29 +1,16 @@
+function myFunction() {
+    var myIndex = 0;
+carousel();
 
-  function resetSearch() {
-      var placeHolder = 'רשום מילת חיפוש';
-      var val = $("#Top1_SearchBox1_SearchTextBox").val();
-      if (!val || val.length == 0)
-          $("#Top1_SearchBox1_SearchTextBox").val(placeHolder);
-  }
-  
-  $("#Top1_SearchBox1_SearchTextBox").live('keyup', function (e) {
-      if (e.keyCode == '13') {
-          e.stopPropagation();
-          searchSite();
-          return false; 
-      }
-  });
-  
-  $('#searchBox a').live('click', function (e) {
-      e.preventDefault();
-      searchSite();
-      return false;
-  });
-  
-  function searchSite(){
-      var query = $("#Top1_SearchBox1_SearchTextBox").val();
-      if (query && query.length > 0) {
-          query = escape(query);
-          location.href = 'http://' + 'www.paz.co.il' + '/index.aspx?id=4158&searchKey=' + query;
-      }
-  }
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+}
