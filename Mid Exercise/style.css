@@ -81,7 +81,8 @@ body{
 
 nav>ul>li:first-child > a{
   padding: 0;
-  color:blue;
+  color:#8F8F8F;
+
   background-position-x: 15px;
   background-image: url(menu_home.png) ;
   }
